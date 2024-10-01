@@ -3,22 +3,39 @@
   <title>obs</title>
   <style>
     body {
-      padding: 100px;
+      padding: 100;
       background-color: black;
-      color: white; /* To make the text visible on a black background */
+      color: white;
     }
 
-    .custom-text {
-      margin-top: 20px;
-      font-size: 18px;
-      color: #ffffff; /* Customize the text color */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #spinning-text {
+      margin-right: 20px;
+      font-size: 24px;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <div id="spinning-text">OBS</div>
+    <video width="55%" src="media/z.mp4" controls></video>
+  </div>
+
   <center>
-    <video width="55%" src="media/z.mp4" controls=""></video>
-    <p class="custom-text">stop banning me from lisas ;(</p>
+    <div id="custom-text">
+      <p>stop banning me from lisas ;(</p>
+    </div>
   </center>
 </body>
 </html>
