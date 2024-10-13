@@ -1,35 +1,30 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>obs</title>
-  <style>
-    body {
-      padding: 100;
-      background-color: black;
-      color: white;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Playback</title>
+    <style>
+        /* Make the background black */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    }
-
-    @keyframes spin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-
-    }
-  </style>
+        /* Ensure the video is responsive */
+        video {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
 </head>
 <body>
-    <video width="55%" src="media/z.mp4" controls></video>
-  </div>
-
-</p>
-    </div>
-  </center>
-
+    <!-- Video element that plays the z.mp4 file -->
+    <video src="z.mp4" controls autoplay></video>
 </body>
 </html>
